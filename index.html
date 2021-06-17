@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn | SignUp</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+</head>
+<body>
+    <div class="login">
+    <div class="login-content">
+        <div class="login-img">
+            <img src="./header.svg" alt="">
+        </div>
+        <div class="forms">     
+        <form action="#" id="login-in" class="register form" onsubmit="sSignIn();">
+        <h1 class="head-title">Let's talk to Anushka Codergirl!</h1>
+        <div class="box">
+            <i class='bx bx-user icon'></i>
+            <input class="login-input" type="text" placeholder="Username" required>
+        </div>
+        <div class="box">
+            <i class='bx bx-lock-alt icon'></i>
+            <input type="password" placeholder="Password" class="login-input" required>
+        </div>
+        <div>
+            <button type="submit" class="btn" >Sign In</button>
+            <a href="mailto:anush66@gmail.com" class="pass-forgot" onclick="alert('Mail us!');">Forgotten password?</a>
+        </div>
+        <div>
+            <span class="account">Don't have an Account ?</span>
+            <span id="sign-up" class="signup">Create New Account</span>
+        </div>
+    </form>
+
+    <form action="" id="login-up" onsubmit="sSignUp();" class="create none">
+        <h1 class="head-title">Sign Up Form</h1>
+        <div class="box">
+            <i class='bx bx-user icon'></i>
+            <input type="text" placeholder="Username" class="login-input" required>
+        </div>
+        <div class="box">
+            <i class='bx bx-envelope icon'></i>
+            <input type="email" placeholder="Email Id"
+            class="login-input" required>
+        </div>
+        <div class="box">
+            <i class='bx bx-lock-alt icon'></i>
+            <input type="password" placeholder="Password" class="login-input" required>
+        </div>
+        <div class="box">
+            <i class='bx bx-phone icon'></i>
+            <input type="tel" placeholder="Contact Number: +1" class="login-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </div>
+        <div class="box">
+            <label for="">Date of birth</label>
+            <input type="date" class="login-input">
+        </div>
+        <div class="box">
+            <i class='bx bx-globe icon'></i>
+            <select id="countySel" size="1">
+            <option value="" selected="selected">Select Country</option>
+            </select>
+             <br>
+            <br>
+            <select id="stateSel" size="1">
+            <option value="" selected="selected">Select State</option>
+            </select>
+            <br>
+            <br>    
+            <select id="citySel" size="1">
+                <option value="" selected="selected">Select City</option>
+            </select>
+            <br>
+            <br>
+            <select id="zipSel" size="1">
+                <option value="" selected="selected">Select Zip </option>
+            </select>
+        </div>
+
+        <div>
+            <button class="btn" onclick="btnSignUp();">
+                Sign Up
+            </button>
+        </div>
+        <div>
+            <span class="login-account">Already have an Account ?</span>
+            <span class="signup" id="sign-in">Sign In</span>
+        </div>
+        <div class="social">
+            <a href="https://twitter.com/AnushCodergirl" target="_blank" class="social-icon"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://twitter.com/AnushCodergirl" target="_blank" class="social-icon"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://www.google.com/search?q=anushka+raj+codergirl&oq=anushka+&aqs=chrome.1.69i57j35i39l2j46i433i457j46i433l2j0i433j69i60.4150j0j1&sourceid=chrome&ie=UTF-8" target="_blank" class="social-icon"><i class='bx bxl-google' ></i></a>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+
+<script src="main.js"></script>
+<script src="app.js"></script>
+
+
+</body>
+</html>
