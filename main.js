@@ -1,4 +1,4 @@
-/*===== LOGIN SHOW and HIDDEN =====*/
+/*===== LOGIN SHOW and HIDE =====*/
 const signUp = document.getElementById('sign-up'),
     signIn = document.getElementById('sign-in'),
     loginIn = document.getElementById('login-in'),
@@ -39,5 +39,5 @@ function sSignUp(){
 
 $(document).ready(function () {
     //change selectboxes to selectize mode to be searchable
-       $("select").select();
+       $("select").select2();
     });
